@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'haivt-dockerhub-user-pass' 
-        DOCKER_IMAGE_NAME = 'haivutuan93/demo-java-app'
+        DOCKER_CREDENTIALS_ID = 'mtruyenvl-dockerhub' 
+        DOCKER_IMAGE_NAME = 'mtruyenvl/demo-java-app'
         KUBECONFIG_PATH = '/var/jenkins_home/.kube/config' // Đường dẫn tới kubeconfig trong container Jenkins
         CLUSTER_NAME = 'docker-desktop'
     }
